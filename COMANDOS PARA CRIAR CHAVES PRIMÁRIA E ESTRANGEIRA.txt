@@ -1,0 +1,12 @@
+CRIAR CHAVE PRIMÁRIA:
+
+ALTER TABLE *nome da tabela*
+MODIFY COLUMN *nome da coluna INT NOT NULL AUTO_INCREMENT,
+ADD PRIMARY KEY (*nome da coluna*);
+
+CRIAR CHAVE ESTRANGEIRA:
+
+ALTER TABLE *nome da tabela*
+ADD CONSTRAINT fk_*nome referente a coluna*
+FOREIGN KEY (*nome da coluna*) REFERENCES *nome da tabela relacionada a tabela de cima*(*nome da coluna*);
+
